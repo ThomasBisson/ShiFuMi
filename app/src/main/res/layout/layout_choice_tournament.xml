@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/backgroundshape" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHI-FU-MI"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true"
+        android:shadowColor="#f44242"
+        android:shadowDx="-2"
+        android:shadowDy="-2"
+        android:shadowRadius="1"
+        android:id="@+id/text_titre_choice_tournament" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom personne"
+        android:id="@+id/edit_nom_personnes"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/text_titre_choice_tournament"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO"
+        android:id="@+id/button_send_name"
+        android:layout_below="@+id/edit_nom_personnes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cancel"
+        android:id="@+id/button_cancel_name"
+        android:layout_alignBaseline="@+id/button_send_name"
+        android:layout_alignBottom="@+id/button_send_name"
+        android:layout_toEndOf="@+id/button_send_name" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_noms"
+        android:text="Noms :"
+        android:textSize="20dp"
+        android:layout_marginTop="68dp"
+        android:layout_below="@+id/edit_nom_personnes"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombres de manches"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="93dp"
+        android:inputType="number"
+        android:id="@+id/edit_nb_manche" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="NEXT"
+        android:id="@+id/button_next_tournament"/>
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/backgroundshape"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_res"
+        android:layout_centerHorizontal="true"
+        android:textColor="#f44242"
+        android:textSize="95dp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_again"
+        android:src="@drawable/again"
+        android:layout_above="@+id/text_timer"
+        android:layout_alignStart="@+id/image_cisceau"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_timer"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#f44242"
+        android:textSize="95dp"
+        android:textStyle="bold"
+        />
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pierre"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="12dp"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:id="@+id/image_pierre" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ciseau"
+        android:layout_alignTop="@+id/image_pierre"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:id="@+id/image_cisceau" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/feuille"
+        android:layout_alignTop="@+id/image_cisceau"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:id="@+id/image_feuille"/>
+
+    <Button
+        android:id="@+id/btn_backToMenu"
+
+        android:text="Menu"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+
+        android:visibility="gone"
+
+        android:layout_above="@+id/image_cisceau"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp" />
+
+    <ImageView
+        android:id="@+id/image_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/image_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>
